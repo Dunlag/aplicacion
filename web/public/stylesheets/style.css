@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url(./vars.css);
+@import url(./cta.css);
+@import url(./offcanvas.css);
+@import url(./cabecera.css);
+@import url(./footer.css);
+@import url(./grid.css);
+@import url(./contacto.css);
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+}
+
+.menu {
+  background-color: #330867d5;
+  display: flex;
+  justify-content: space-between;
+  position: relative; /* Necesario para que el submenú se posicione correctamente */
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+}
+
+li {
+  margin: 0;
+  transition: all 0.5s;
+}
+
+li:hover {
+  background-color: #1d3838;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  padding: 0.3rem 1rem;
+  font-size: 1.5rem;
+  color: var(--font-color-cta);
+  padding-bottom: 0.5rem;
+}
+
+.submenu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  background-color: #330867d5;
+
+}
+
+li:hover .submenu {
+  display: flex;
+}
+
+.submenu_li:hover {
+  background-color: #1d3838;
+}
+
+.menu__mobile{
+  display: none;
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  z-index: 10;
+  background-color: #330867d5;
+}
+
+main section{
+  max-width: var(--side-width);
+  margin: auto;
+}
+
+.main{
+  background-color: aqua;
+  min-height: 100vh;
+}
+
+
+.presentacion{
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: aqua;
+  padding-bottom: 50px;
+
+  h2{
+    text-align: center;
+  }
+
+  .inner__main{
+    display: flex;
+    gap: 2rem;
+
+    *{
+      flex: 1;
+    }
+  }
+}
+
+.banner{
+
+background-color: rgb(49, 47, 47);
+color: black;
+rotate: 5deg;
+  h2{
+    text-align: center;
+    font-size: 2.5rem;
+    rotate: -5deg;
+  }
+
+  *{
+    font-size: 1.5rem;
+    rotate: -5deg;
+  }
+}
+
+.video{
+  min-height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.video_fondo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+
+
+section#slide {
+  .slide__container {
+    position: relative;
+    height: 10rem;
+    .inner {
+      position: absolute;
+      left: 0;
+      width: calc(100% * 4);
+      outline: solid;
+      display: flex;
+      animation: slide-left 30s infinite; 
+
+      div {
+        flex: 1;
+        outline: solid;
+      }
+    }
+  }
+
+  .slide__container .inner div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10rem;
+    font-size: 3rem;
+
+
+    &:nth-child(1) {
+      background-color: bisque;
+    }
+    &:nth-child(2n) {
+      background-color: aquamarine;
+    }
+  }
+
+
+}
+
+@keyframes slide-left {
+  0% { 
+    left: 0; /* Primera diapositiva */
+  }
+  20% { 
+    left: 0; /* Pausa en la primera diapositiva */
+  }
+  25% { 
+    left: -100%; /* Segunda diapositiva */
+  }
+  45% { 
+    left: -100%; /* Pausa en la segunda diapositiva */
+  }
+  50% { 
+    left: -200%; /* Tercera diapositiva */
+  }
+  70% { 
+    left: -200%; /* Pausa en la tercera diapositiva */
+  }
+  75% { 
+    left: -300%; /* Cuarta diapositiva */
+  }
+  95% { 
+    left: -300%; /* Pausa en la cuarta diapositiva */
+  }
+  100% { 
+    left: 0; /* Volver a la primera diapositiva */
+  }
+}
+
+
+
+
+/*movil*/
+
+@media screen and (max-width:800px) {
+  .menu{
+    display: none;
+  }
+
+  .menu__mobile{
+    display: block;
+    text-align: right;
+  }
+}

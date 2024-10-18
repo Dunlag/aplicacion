@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Viva María</title>
+    <link rel="shortcut icon" href="./images/restaurant-regular-24.png" type="image/x-icon">
+    <link rel="stylesheet" href="./stylesheets/style.css">
+    <!--<meta http-equiv="refresh" content="5; url=http://example.com">-->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+
+<body>
+    <aside id="offcanvas" class="offcanvas">
+
+        <h2>Reserva mesa</h2>
+        <form action="" method="">
+            <div class="control">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email de Contacto">
+            </div>
+
+            <div class="control">
+                <label for="fecha">fecha</label>
+                <input type="datetime-local" id="fecha" name="fecha">
+            </div>
+
+            <div class="control">
+                <label for="comensales">Personas</label>
+                <input type="number" id="personas" name="personas" min="1" max="5" value="1">
+            </div>
+            <input type="hidden" name="lenguaje" id="lenguaje">
+            <div class="control">
+                <button>Enviar</button>
+            </div>
+        </form>
+        <button id="close" class="close">&times;</button>
+    </aside>
+
+
+    <header class="top" id="top">
+        <nav class="menu">
+
+            <img src="./images/restaurant-regular-24.png" alt="">
+
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Carta & Menu</a>
+                    <ul class="submenu">
+                        <li class="submenu_li"><a href="#" class="a__menu">Carta</a></li>
+                        <li class="submenu_li"><a href="#" class="a__menu">Del dia</a></li>
+                        <li class="submenu_li"><a href="celebraciones.html" class="a__menu">Celebraciones</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" id="open__offcanvas">Reservar</a></li>
+            </ul>
+        </nav>
+        <ul class="menu__mobile">
+            <li><a href="#" class="open__menu">Menu</a></li>
+        </ul>
+    </header>
+
+
+    <section id="cta" class="cta">
+        <div class="backdrop"></div>
+        <h1 class="titulo__cta">Viva María</h1>
+        <p class="parrafo__cta">Reserva tu mesa en Viva María y disfruta de la autentica gastronomia italiana en Málaga
+        </p>
+        <a href="#" class="cta__boton">Haz tu reserva</a>
+    </section>
+
+    <main class="main">
+
+        <section class="presentacion" id="presentacion">
+            <h2 class="h2__presentacion">Descubre la esencia de Viva Maria</h2>
+            <div class="inner__main">
+                <div class="text__main">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita iusto ut
+                    reprehenderit modi alias nihil temporibus exercitationem, voluptate labore sapiente. Lorem ipsum
+                    dolor sit amet consectetur adipisicing elit. Magnam quaerat recusandae eum, consequatur architecto
+                    magni laborum ipsum dolorem officiis et.</div>
+                <div class="text__main">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id sequi nisi minus
+                    beatae unde deleniti adipisci at quaerat provident enim! Lorem ipsum dolor sit, amet consectetur
+                    adipisicing elit. Beatae consequuntur optio atque fugiat odio harum deleniti recusandae ut mollitia
+                    similique! </div>
+            </div>
+        </section>
+        <section class="video">
+            <div class="video_fondo">
+
+            </div>
+            <div class="foreground">
+                <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, quibusdam.</h2>
+
+            </div>
+        </section>
+
+
+
+        <section class="boxed banner">
+            <h2 class="h2__banner">
+                Conoce en detalle nuestro Restaurante
+            </h2>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, fugit. Ratione perspiciatis culpa eaque expedita dignissimos facilis modi, rerum nobis! Cupiditate totam ullam quae doloremque quos rerum. Sequi, reiciendis fugiat.
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet illo deserunt blanditiis laborum itaque corrupti nulla amet id consectetur. Praesentium consequatur porro reiciendis expedita, fugit quaerat ullam placeat tenetur explicabo!
+            </div>
+        </section>
+
+
+
+    </main>
+    <section class="slide" id="slide">
+        <div class="slide__container">
+            <div class="inner">
+                <div>
+                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id non impedit veniam ducimus earum doloribus.</h3>
+                </div>
+                <div>
+                    <h3>Id facilis adipisci nihil iure, exercitationem pariatur? Rerum vero, voluptatum excepturi tempore possimus quod tempora.</h3>
+                </div>
+                <div>
+                    <h3>Assumenda debitis magni rem quae ipsam ullam hic facere, nemo est asperiores odit. Fugiat, dignissimos!</h3>
+                </div>
+                <div>
+                    <h3>Libero veritatis quisquam eum laboriosam cupiditate laborum suscipit ipsa aperiam, provident earum pariatur quibusdam amet.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="inner">
+            <div>
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium impedit esse rerum porro sit qui
+                    possimus fugiat commodi facilis itaque distinctio assumenda, accusamus, harum sunt ut soluta vel
+                    praesentium hic.</p>
+                <p class="redes">
+                    <a href="#" class="a_redes"><img src="" alt="" class="img_redes"></a>
+                    <a href="#" class="a_redes"><img src="" alt="" class="img_redes"></a>
+                    <a href="#" class="a_redes"><img src="" alt="" class="img_redes"></a>
+                </p>
+            </div>
+            <div>
+                <h2>Enlaces legales</h2>
+                <ul>
+                    <li><a href="#" class="a_footer">Enlace social 1</a></li>
+                    <li><a href="#" class="a_footer">Enlace social 2</a></li>
+                    <li><a href="#" class="a_footer">Enlace social 3</a></li>
+                    <li><a href="#" class="a_footer">Enlace social 4</a></li>
+                    <li><a href="#" class="a_footer">Enlace social 5</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2>Acceso a Administracion</h2>
+                <form action="">
+                    <div class="control">
+                        <label for="user">Usuario</label><input id="user" name="user" type="text">
+                        <label for="password">Password</label><input type="password" name="password" id="password">
+                    </div>
+                    <button>Login</button>
+                </form>
+            </div>
+        </div>
+        <div class="desarrollo">
+            developed by 2daw
+        </div>
+    </footer>
+<!--Hacer una pagina que sea dos columnas, las impares 1º imagen y despues texto y las pares 1º texto y despues imagen-->
+    <script src="./javascripts/front.js"></script>
+</body>
+
+</html>

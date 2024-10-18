@@ -1,0 +1,59 @@
+section#cta{
+    position: relative;
+  
+    /*outline: solid 1px red;*/
+    min-height: 50vh;
+    background-image: linear-gradient(to top, #1d38388f 0%, #3308679f 100%), url(../images/fondo-cta.jpg);
+    background-position: center center;
+    background-size: cover;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 30px;
+    color: var(--font-color-cta);
+    text-align: center;
+  }
+  
+  .titulo__cta{
+    z-index: 1;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
+  .parrafo__cta{
+    font-size: 2rem;
+    z-index: 1;
+    max-width: 900px;
+    padding-bottom: 1rem;
+  }
+  
+  /* .backdrop{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.336);
+  
+  } */
+  
+  
+  .cta__boton{
+    font-size: 1.5rem;
+    border: 1px solid var(--font-color-cta);
+    padding: 0.3rem 1rem;
+    background-color: #330867 ;
+    color: var(--font-color-cta);
+    border-radius: 10px;
+    text-decoration: none;
+    transition: all 0.3s;
+  
+    &:hover{
+      background-color: #1d3838;
+  
+    }
+  }
+  
